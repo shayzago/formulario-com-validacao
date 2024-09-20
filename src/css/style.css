@@ -6,7 +6,7 @@ body {
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,6 @@ body {
 
 .container__info {
     color: #fff;
-    margin-right: 100px;
     width: 500px;
 }
 
@@ -35,6 +34,7 @@ body {
     padding: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .form .form__itens {
@@ -44,6 +44,7 @@ body {
 }
 
 .form .form__input {
+    width: 380px;
     outline: none;
     padding: 10px;
     border: 1px solid black;
@@ -86,4 +87,18 @@ body {
 
 .form .form__botao:hover {
     background-color: #67e0a6;
+}
+
+@media (max-width:875px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 20px;
+    }
+
+    .container__info {
+        padding: 0 10px;
+        width: 100%;
+    }
 }
