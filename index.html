@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário | Quest</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="container__info">
+        <h1>ficou com dúvida? <br> Nos mande uma mensagem!</h1>
+        <p>
+          caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+          entraremos em contato em menos de 24h.
+        </p>
+      </div>
+
+      <div class="container__form">
+        <form class="form">
+          <div class="form__itens">
+            <input class="form__input" type="text" placeholder="Nome completo *"/>
+            <span class="input__campo-obrigatorio">campo obrigatório</span>
+          </div>
+
+          <div class="form__itens">
+            <input class="form__input" type="text" placeholder="Email *" />
+            <span class="input__campo-obrigatorio">campo obrigatório</span>
+          </div>
+
+          <div class="form__itens">
+            <input class="form__input" type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" maxlength="11" placeholder="Telefone *" />
+            <span class="input__campo-obrigatorio">campo obrigatório</span>
+          </div>
+
+          <div class="form__itens">
+            <textarea class="form__input" placeholder="Mensagem *" style="resize: none" cols="60" rows="8"
+            ></textarea>
+            <span class="input__campo-obrigatorio">campo obrigatório</span>
+          </div>
+
+          <p>*campos obrigatórios</p>
+
+          <button class="form__botao" type="submit">Enviar</button>
+        </form>
+      </div>
+    </main>
+
+    <script type="text/javascript" src="./src/js/script.js"></script>
+
+  </body>
+</html>

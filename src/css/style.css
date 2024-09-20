@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    background: url('../images/bg-repeat.jpg');
+    background-size: contain;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.container__info {
+    color: #fff;
+    margin-right: 100px;
+    width: 500px;
+}
+
+.container__info h1 {
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.container__info p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.container__form {
+    background-color: #fff;
+    height: 500px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.form .form__itens {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form .form__input {
+    outline: none;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.form .form__input.erro {
+    border: 1px solid #F52E2E;
+}
+
+.form .form__input.correto {
+    border: 1px solid #00C22B;
+}
+
+.form .input__campo-obrigatorio {
+    font-size: 8px;
+    color: #F52E2E;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.form .input__campo-obrigatorio.erro {
+    opacity: 1;
+}
+
+.form .form__botao {
+    cursor: pointer;
+    width: 100%;
+    height: 42px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 30px;
+    background-color: #3CCC87;
+    border-radius: 3px;
+    transition: 0.3s ease-in-out;
+}
+
+.form .form__botao:hover {
+    background-color: #67e0a6;
+}
